@@ -39,11 +39,13 @@ function keyDown(evt){
     var avg = Math.avg(...timeArray);
     var bpm = (1000/avg) * 60;
     bpmDisplay.innerText = Math.round(bpm) + " bpm";
+    bpmDisplayPrecise.innerText = bpm;
 }
 
 function reset(evt){
     lastStamp = false;
     timeArray = [];
     bpmDisplay.innerText = "Press b to start counting.";
+    bpmDisplayPrecise.innerText = 0;
     resetBtn.classList.add("none");
 }

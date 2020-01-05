@@ -1,3 +1,8 @@
 .none{
     display: none!important;
 }
+#bpmDisplayPrecise {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
